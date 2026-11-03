@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#101114">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Ma muscu">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-192.png">
+<title>Ma muscu en salle</title>
+<style>
+:root{--bg:#0e0f12;--panel:#191b20;--panel2:#22252c;--line:#30343d;--txt:#f5f6f8;--muted:#a1a6b1;--accent:#c7f36b;--accent2:#91bd3f;--red:#ff7373}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% -10%,#293322 0,transparent 34%),var(--bg);color:var(--txt);font:15px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding-bottom:92px}
+header{padding:22px 18px 12px;max-width:760px;margin:auto}.eyebrow{color:var(--accent);font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.headrow{display:flex;align-items:center;justify-content:space-between;gap:12px}h1{font-size:30px;letter-spacing:-1.2px;margin:5px 0 3px}.sub{color:var(--muted);font-size:13px}
+.pill{border:1px solid #4b5a35;background:#26321b;color:var(--accent);padding:8px 11px;border-radius:30px;font-size:11px;font-weight:800}
+main{max-width:760px;margin:auto;padding:0 14px}.hero{background:linear-gradient(135deg,#222a1b,#171a1d 65%);border:1px solid #3a4630;border-radius:20px;padding:17px;margin:12px 0 18px}.heroTop{display:flex;justify-content:space-between;align-items:center}.hero strong{font-size:16px}.hero p{color:#c3c9b9;font-size:13px;margin:8px 0 13px;line-height:1.45}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.stat{background:#11150f;border-radius:12px;padding:10px}.stat b{display:block;font-size:19px;color:var(--accent)}.stat span{font-size:10px;color:var(--muted)}
+.daygrid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin-bottom:16px}.day{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:13px;text-align:left;color:var(--txt);cursor:pointer}.day.active{border-color:var(--accent);background:#20271a}.day .d{font-size:10px;color:var(--muted);font-weight:800;letter-spacing:1px}.day .name{font-weight:800;font-size:14px;margin:5px 0}.day .count{font-size:11px;color:var(--muted)}
+.sectionhead{display:flex;align-items:center;justify-content:space-between;margin:18px 2px 10px}.sectionhead h2{font-size:19px;margin:0}.sectionhead small{color:var(--muted)}
+.exercise{background:var(--panel);border:1px solid var(--line);border-radius:17px;margin:10px 0;overflow:hidden}.exhead{display:flex;gap:12px;padding:12px;align-items:center}.thumb{width:86px;height:78px;border-radius:12px;background:linear-gradient(145deg,#343b2c,#20242a);flex-shrink:0;display:grid;place-items:center;overflow:hidden}.thumb svg{width:80px;height:72px}.exinfo{min-width:0;flex:1}.exnum{font-size:10px;color:var(--accent);font-weight:800;letter-spacing:1px}.exname{font-weight:800;font-size:14px;line-height:1.25;margin:4px 0}.exmeta{color:var(--muted);font-size:11px;line-height:1.4}.editbtn{background:var(--panel2);border:1px solid var(--line);color:var(--muted);border-radius:9px;padding:7px 9px;font-size:11px}
+.sets{padding:0 12px 12px}.setlabels,.setrow{display:grid;grid-template-columns:35px 1fr 1fr 40px;gap:7px;align-items:center}.setlabels{font-size:10px;color:var(--muted);padding:0 0 6px}.setrow{margin:5px 0}.setrow span{font-size:11px;color:var(--muted);text-align:center}.setrow input{min-width:0;width:100%;background:#101216;border:1px solid #343943;border-radius:9px;color:var(--txt);padding:9px 7px;font-size:13px;text-align:center}.done{appearance:none;width:25px;height:25px;border:1px solid #59616e;border-radius:8px;background:#111318;margin:auto;cursor:pointer}.done:checked{background:var(--accent);border-color:var(--accent)}.done:checked:after{content:"✓";display:block;color:#17200b;font-weight:900;font-size:17px;line-height:22px}
+.note{padding:0 12px 12px;color:var(--muted);font-size:11px}
+.primary{background:var(--accent);border:0;color:#18200c;font-weight:900;border-radius:12px;padding:13px 16px;width:100%;font-size:14px;cursor:pointer}.secondary{background:var(--panel2);border:1px solid var(--line);color:var(--txt);border-radius:11px;padding:11px 13px;font-weight:700;cursor:pointer}
+.bottom{position:fixed;bottom:0;left:0;right:0;background:#121418ee;backdrop-filter:blur(18px);border-top:1px solid var(--line);padding:10px 14px calc(10px + env(safe-area-inset-bottom));display:flex;justify-content:center;z-index:5}.bottominner{max-width:720px;width:100%;display:flex;gap:8px}.bottom button{flex:1;background:transparent;border:0;color:var(--muted);padding:7px 4px;font-size:11px;font-weight:700}.bottom button.active{color:var(--accent)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:15px;margin:12px 0}.historyitem{border-bottom:1px solid var(--line);padding:10px 0}.historyitem:last-child{border:0}.muted{color:var(--muted)}.timer{font-size:46px;font-weight:900;text-align:center;margin:10px}.timerrow{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.modal{position:fixed;inset:0;background:#000b;display:none;align-items:flex-end;z-index:10}.modal.show{display:flex}.sheet{background:#1a1d22;border-radius:22px 22px 0 0;padding:20px;width:100%;max-width:600px;margin:auto;max-height:85vh;overflow:auto}.sheet h3{margin:0 0 14px}.field{display:block;margin:12px 0;color:var(--muted);font-size:12px}.field input{display:block;width:100%;margin-top:6px;background:#101216;border:1px solid var(--line);color:white;padding:12px;border-radius:10px;font-size:15px}
+.empty{text-align:center;padding:30px 12px;color:var(--muted)}
+@media(min-width:600px){.daygrid{grid-template-columns:repeat(4,1fr)}.exhead{padding:15px}.thumb{width:105px;height:88px}}
+</style>
+</head>
+<body>
+<header><div class="eyebrow">Ton espace entraînement</div><div class="headrow"><div><h1>Ma muscu en salle</h1><div class="sub">4 séances · progression suivie · à ton rythme</div></div><div class="pill">LET'S GO</div></div></header>
+<main id="app">
+<section class="hero"><div class="heroTop"><strong>Construis ta progression</strong><span>⚡</span></div><p>Ton programme de référence. Coche chaque série, ajuste tes charges et retrouve tes séances dans l’historique.</p><div class="stats"><div class="stat"><b>4</b><span>SÉANCES / SEMAINE</span></div><div class="stat"><b id="doneCount">0</b><span>SÉRIES VALIDÉES</span></div><div class="stat"><b id="sessionCount">0</b><span>SÉANCES SAUVEGARDÉES</span></div></div></section>
+<div class="daygrid" id="days"></div>
+<div id="workout"></div>
+<div id="history" style="display:none"></div>
+<div id="tools" style="display:none">
+ <div class="sectionhead"><h2>Chronomètre de repos</h2></div>
+ <div class="panel"><div class="muted" style="text-align:center">Lance ton repos entre deux séries</div><div class="timer" id="clock">01:30</div><div class="timerrow"><button class="secondary" onclick="setTimer(60)">60 s</button><button class="secondary" onclick="setTimer(90)">90 s</button><button class="secondary" onclick="setTimer(120)">120 s</button></div><div class="timerrow" style="margin-top:12px"><button class="primary" style="width:auto;min-width:130px" onclick="toggleTimer()" id="timerBtn">Démarrer</button><button class="secondary" onclick="resetTimer()">Réinitialiser</button></div></div>
+ <div class="sectionhead"><h2>Sauvegarde</h2></div><div class="panel"><p class="muted" style="font-size:13px;line-height:1.5">Tes charges, séries cochées et historiques sont enregistrés dans le stockage de ce navigateur sur ton téléphone.</p><button class="secondary" onclick="exportData()">Exporter mes données</button> <button class="secondary" onclick="document.getElementById('importFile').click()">Importer</button><input id="importFile" type="file" accept="application/json" hidden onchange="importData(event)"></div>
+</div>
+</main>
+<nav class="bottom"><div class="bottominner"><button class="active" id="navTrain" onclick="showTab('train')">🏋️ Séances</button><button id="navHistory" onclick="showTab('history')">📈 Historique</button><button id="navTools" onclick="showTab('tools')">⏱ Outils</button></div></nav>
+<div class="modal" id="editModal"><div class="sheet"><h3 id="editTitle">Modifier l’exercice</h3><label class="field">Charge de départ / actuelle<input id="editWeight" placeholder="Ex. 20 kg"></label><label class="field">Répétitions cibles<input id="editReps" placeholder="Ex. 8–12"></label><label class="field">Nombre de séries<input id="editSets" type="number" min="1" max="8"></label><div style="display:flex;gap:8px"><button class="primary" onclick="saveEdit()">Enregistrer</button><button class="secondary" onclick="closeEdit()">Fermer</button></div></div></div>
+<script>
+const program=[
+{day:"LUNDI",title:"Biceps + Abdos",items:[
+["Curl banc à l’envers 1 bras","3×8–10 / bras","14 kg / bras",3,"8–10","14 kg / bras"],
+["Curl incliné","3×8–12","À déterminer",3,"8–12",""],
+["Curl marteau","3×10–12","20 kg / bras",3,"10–12","20 kg / bras"],
+["Crunch poulie haute","3×12–15","À déterminer",3,"12–15",""],
+["Relevés de genoux suspendu / chaise romaine","3×10–15","Poids du corps",3,"10–15","Poids du corps"],
+["Gainage classique","3×30–45 s","Poids du corps",3,"30–45 s","Poids du corps"]
+]},
+{day:"MERCREDI",title:"Dos + Épaules",items:[
+["Tirage vertical devant poulie haute","3×8–12","38,3 kg",3,"8–12","38,3 kg"],
+["Rowing assis poulie basse","3×8–12","À déterminer",3,"8–12",""],
+["Rowing haltère un bras","3×8–12","20 kg",3,"8–12","20 kg"],
+["Extensions lombaires","2×12–15","14 kg",2,"12–15","14 kg"],
+["Développé militaire machine","3×8–10","45–50 kg (ou haltères 24 kg)",3,"8–10","45–50 kg"],
+["Élévations latérales","3×12–15","14 kg poulie ou 10 kg haltère",3,"12–15","14 kg poulie"],
+["Bird double poulie","3×12–15","14 kg",3,"12–15","14 kg"],
+["Shrugs","2×10–12","26 kg / bras",2,"10–12","26 kg / bras"]
+]},
+{day:"JEUDI",title:"Pectoraux + Triceps",items:[
+["Développé couché plat","3×8–10","20 kg / haltère ou 50 kg machine",3,"8–10","20 kg / haltère"],
+["Développé incliné haltères","3×8–10","20 kg / haltère ou 40–50 kg machine",3,"8–10","20 kg / haltère"],
+["Écartés poulie vis-à-vis","3×12–15","18–23 kg / côté",3,"12–15","18 kg / côté"],
+["Barre EZ au front","3×8–12","6 kg de chaque côté",3,"8–12","6 kg de chaque côté"],
+["Extension triceps à la poulie","3×10–12","36 kg",3,"10–12","36 kg"],
+["Dips à la machine","2×10–12","45 kg",2,"10–12","45 kg"]
+]},
+{day:"VENDREDI",title:"Jambes + Fessiers",items:[
+["Presse à cuisses","3×8–12","120 kg",3,"8–12","120 kg"],
+["Presse inversée","3×10–12","30 kg max",3,"10–12","30 kg max"],
+["Leg curl","3×10–12","52 kg assis ou 30 kg couché",3,"10–12","52 kg assis"],
+["Leg extension","3×10–12","59 kg",3,"10–12","59 kg"],
+["Mollets machine","3×15–20","100 kg",3,"15–20","100 kg"],
+["Fessiers machine","2×12–15","10 kg",2,"12–15","10 kg"],
+["Adducteurs machine","2×12–15","45 kg",2,"12–15","45 kg"],
+["Abducteurs machine","2×12–15","39 kg",2,"12–15","39 kg"]
+]}];
+let state=JSON.parse(localStorage.getItem("muscu2")||'{"weights":{},"reps":{},"checks":{},"history":[]}');
+let active=0,editTarget=null,timerLeft=90,timerId=null;
+const save=()=>localStorage.setItem("muscu2",JSON.stringify(state));
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function drawDays(){document.getElementById('days').innerHTML=program.map((p,i)=>`<button class="day ${i===active?'active':''}" onclick="selectDay(${i})"><div class="d">${p.day}</div><div class="name">${p.title}</div><div class="count">${p.items.length} exercices</div></button>`).join('')}
+function art(i){let poses=['<circle cx="40" cy="17" r="7"/><path d="M40 25v24m0-15-17 7m17-7 18 5M40 49l-10 17m10-17 12 17"/>','<circle cx="40" cy="17" r="7"/><path d="M40 25v25m0-17-16 8m16-8 16 8M40 50l-10 16m10-16 12 16"/>','<circle cx="40" cy="17" r="7"/><path d="M40 25v24m0-15-18-5m18 5 18-5M40 49 28 66m12-17 12 17"/>'];return `<svg viewBox="0 0 80 76" fill="none" stroke="#d4f18a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 68h64" stroke="#66734f" stroke-width="2"/>${poses[i%3]}<path d="M16 34h9m30 0h9M16 30v8m42-8v8" stroke="#a5b1bd" stroke-width="3"/></svg>`}
+function drawWorkout(){let p=program[active];document.getElementById('workout').style.display='block';document.getElementById('workout').innerHTML=`<div class="sectionhead"><h2>${p.title}</h2><small>${p.items.length} exercices</small></div>${p.items.map((e,i)=>{let id=active+'-'+i,n=Number(state.sets?.[id]||e[3]),w=state.weights[id]??e[5],r=state.reps[id]??e[4];return `<article class="exercise"><div class="exhead"><div class="thumb">${art(i)}</div><div class="exinfo"><div class="exnum">EXERCICE ${String(i+1).padStart(2,'0')}</div><div class="exname">${esc(e[0])}</div><div class="exmeta">${n} séries · ${esc(r)} reps · ${esc(w||e[2])}</div></div><button class="editbtn" onclick="editExercise(${active},${i})">Modifier</button></div><div class="sets"><div class="setlabels"><span>SÉRIE</span><span>CHARGE</span><span>REPS</span><span>OK</span></div>${Array.from({length:n},(_,s)=>`<div class="setrow"><span>${s+1}</span><input aria-label="Charge série ${s+1}" value="${esc(w||'')}" placeholder="kg" onchange="setValue('${id}','weight',this.value)"><input aria-label="Répétitions série ${s+1}" value="${esc(r)}" placeholder="reps" onchange="setValue('${id}','reps',this.value)"><input class="done" type="checkbox" ${state.checks[id+'-'+s]?'checked':''} onchange="checkSet('${id}',${s},this.checked)"></div>`).join('')}</div></article>`}).join('')}<button class="primary" onclick="finishWorkout()">Terminer et enregistrer la séance</button><p class="note">Les charges et répétitions sont modifiables exercice par exercice. Les validations sont enregistrées automatiquement.</p>`;updateStats()}
+function selectDay(i){active=i;drawDays();drawWorkout()}
+function setValue(id,type,val){state[type==='weight'?'weights':'reps'][id]=val;save()}
+function checkSet(id,s,v){state.checks[id+'-'+s]=v;save();updateStats()}
+function updateStats(){let count=Object.values(state.checks).filter(Boolean).length;document.getElementById('doneCount').textContent=count;document.getElementById('sessionCount').textContent=state.history.length}
+function editExercise(d,i){editTarget=[d,i];let e=program[d].items[i],id=d+'-'+i;document.getElementById('editTitle').textContent=e[0];document.getElementById('editWeight').value=state.weights[id]??e[5];document.getElementById('editReps').value=state.reps[id]??e[4];document.getElementById('editSets').value=state.sets?.[id]??e[3];document.getElementById('editModal').classList.add('show')}
+function closeEdit(){document.getElementById('editModal').classList.remove('show')}
+function saveEdit(){if(!editTarget)return;let [d,i]=editTarget,id=d+'-'+i;state.weights[id]=document.getElementById('editWeight').value;state.reps[id]=document.getElementById('editReps').value;state.sets=state.sets||{};state.sets[id]=Math.max(1,Math.min(8,Number(document.getElementById('editSets').value)||3));save();closeEdit();drawWorkout()}
+function finishWorkout(){let p=program[active],valid=Object.keys(state.checks).filter(k=>k.startsWith(active+'-')&&state.checks[k]).length;state.history.unshift({date:new Date().toLocaleString('fr-FR'),day:p.day,title:p.title,valid});save();Object.keys(state.checks).filter(k=>k.startsWith(active+'-')).forEach(k=>delete state.checks[k]);save();updateStats();alert('Séance enregistrée ! '+valid+' série(s) validée(s).')}
+function showTab(tab){['train','history','tools'].forEach(t=>document.getElementById('nav'+t[0].toUpperCase()+t.slice(1)).classList.toggle('active',t===tab));document.getElementById('days').style.display=tab==='train'?'grid':'none';document.getElementById('workout').style.display=tab==='train'?'block':'none';document.getElementById('history').style.display=tab==='history'?'block':'none';document.getElementById('tools').style.display=tab==='tools'?'block':'none';if(tab==='history')drawHistory()}
+function drawHistory(){let h=document.getElementById('history');h.innerHTML='<div class="sectionhead"><h2>Historique</h2><small>'+state.history.length+' séances</small></div>'+(state.history.length?state.history.map(x=>`<div class="panel historyitem"><b>${esc(x.title)}</b><div class="muted" style="font-size:12px;margin-top:5px">${esc(x.date)} · ${x.valid} séries validées</div></div>`).join(''):'<div class="panel empty">Tes séances terminées apparaîtront ici.</div>')}
+function setTimer(s){timerLeft=s;renderClock();if(timerId){clearInterval(timerId);timerId=null;document.getElementById('timerBtn').textContent='Démarrer'}}
+function renderClock(){document.getElementById('clock').textContent=String(Math.floor(timerLeft/60)).padStart(2,'0')+':'+String(timerLeft%60).padStart(2,'0')}
+function toggleTimer(){if(timerId){clearInterval(timerId);timerId=null;document.getElementById('timerBtn').textContent='Reprendre';return}document.getElementById('timerBtn').textContent='Pause';timerId=setInterval(()=>{timerLeft--;renderClock();if(timerLeft<=0){clearInterval(timerId);timerId=null;document.getElementById('timerBtn').textContent='Terminé';if(navigator.vibrate)navigator.vibrate([250,100,250])}},1000)}
+function resetTimer(){if(timerId)clearInterval(timerId);timerId=null;timerLeft=90;renderClock();document.getElementById('timerBtn').textContent='Démarrer'}
+function exportData(){let b=new Blob([JSON.stringify(state,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='muscu-salle-2-donnees.json';a.click();URL.revokeObjectURL(a.href)}
+function importData(e){let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{state=JSON.parse(r.result);save();drawWorkout();updateStats();alert('Données importées.')}catch{alert('Fichier invalide.')}};r.readAsText(f)}
+drawDays();drawWorkout();renderClock();updateStats();
+</script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(() => {}));
+}
+</script>
+</body></html>
