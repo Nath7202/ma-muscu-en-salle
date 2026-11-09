@@ -1,19 +1,24 @@
-# Ma muscu en salle — version installable iPhone
+MA MUSCU EN SALLE — V2
 
-Cette version est une PWA : après une première ouverture depuis une adresse HTTPS, Safari peut l'ajouter à l'écran d'accueil. Les fichiers de l'application sont mis en cache pour une utilisation hors connexion.
+Installation / mise à jour :
+1. Décompresse ce ZIP.
+2. Remplace les fichiers de l’ancienne version sur ton dépôt GitHub Pages par le contenu du dossier « Ma_muscu_en_salle_V2 ».
+3. Ouvre l’application sur l’iPhone et actualise-la. Si l’ancienne version reste affichée, ferme complètement l’application web puis rouvre-la. Le cache du service worker a été renouvelé pour cette V2.
 
-## Publication gratuite (GitHub Pages)
-1. Crée un compte gratuit sur https://github.com si tu n'en as pas.
-2. Crée un nouveau dépôt public nommé `ma-muscu-en-salle`.
-3. Décompresse cette archive et envoie **tous les fichiers** de ce dossier à la racine du dépôt (index.html, manifest.webmanifest, sw.js, icon-192.png, icon-512.png).
-4. Dans le dépôt : **Settings → Pages**.
-5. Dans **Build and deployment**, choisis **Deploy from a branch**, puis `main` et `/ (root)`, et enregistre.
-6. Attends que GitHub affiche l'adresse publiée, généralement `https://TON-PSEUDO.github.io/ma-muscu-en-salle/`.
+Programme livré :
+- Lundi : Pectoraux + Triceps.
+- Mercredi : Dos + Biceps.
+- Jeudi : Jambes + Fessiers.
+- Vendredi : Épaules + Abdos.
+- Les exercices du programme précédent sont conservés et redistribués pour limiter le chevauchement des muscles sollicités.
 
-## Installation sur iPhone
-1. Ouvre cette adresse dans **Safari** (pas dans le navigateur intégré d'une autre application).
-2. Appuie sur **Partager** (carré avec flèche vers le haut).
-3. Choisis **Sur l'écran d'accueil**.
-4. Vérifie le nom « Ma muscu », active **Ouvrir comme app web** si l'option apparaît, puis touche **Ajouter**.
+Fonctions :
+- 28 photos intégrées dans le dossier photos/.
+- Paramètres : ajouter / supprimer / renommer / réordonner les séances et exercices, déplacer un exercice vers une autre séance, modifier les charges, répétitions, séries et photos.
+- Importer une photo personnelle depuis l’iPhone pour chaque exercice.
+- Charges et répétitions mémorisées d’une semaine à l’autre.
+- Durée indicative par séance (aucun chronomètre global).
+- Chronomètre de repos, validation des séries et historique.
+- Export / import des données et des photos personnalisées.
 
-La publication est gratuite avec GitHub Pages pour un dépôt public. Le site doit rester publié pour que l'installation initiale et les mises à jour soient disponibles. Une fois les ressources mises en cache, l'application peut fonctionner hors connexion. Les données d'entraînement sont conservées localement dans le navigateur / l'application sur cet iPhone : pense à utiliser Exporter mes données pour en garder une copie.
+Les réglages, charges, photos personnelles et historiques sont stockés localement dans le navigateur de cet appareil. Pense à exporter régulièrement tes données pour les sauvegarder ou les transférer.

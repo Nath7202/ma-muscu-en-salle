@@ -18,7 +18,7 @@ header{padding:22px 18px 12px;max-width:760px;margin:auto}.eyebrow{color:var(--a
 main{max-width:760px;margin:auto;padding:0 14px}.hero{background:linear-gradient(135deg,#222a1b,#171a1d 65%);border:1px solid #3a4630;border-radius:20px;padding:17px;margin:12px 0 18px}.heroTop{display:flex;justify-content:space-between;align-items:center}.hero strong{font-size:16px}.hero p{color:#c3c9b9;font-size:13px;margin:8px 0 13px;line-height:1.45}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.stat{background:#11150f;border-radius:12px;padding:10px}.stat b{display:block;font-size:19px;color:var(--accent)}.stat span{font-size:10px;color:var(--muted)}
 .daygrid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin-bottom:16px}.day{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:13px;text-align:left;color:var(--txt);cursor:pointer}.day.active{border-color:var(--accent);background:#20271a}.day .d{font-size:10px;color:var(--muted);font-weight:800;letter-spacing:1px}.day .name{font-weight:800;font-size:14px;margin:5px 0}.day .count{font-size:11px;color:var(--muted)}
 .sectionhead{display:flex;align-items:center;justify-content:space-between;margin:18px 2px 10px}.sectionhead h2{font-size:19px;margin:0}.sectionhead small{color:var(--muted)}
-.exercise{background:var(--panel);border:1px solid var(--line);border-radius:17px;margin:10px 0;overflow:hidden}.exhead{display:flex;gap:12px;padding:12px;align-items:center}.thumb{width:86px;height:78px;border-radius:12px;background:linear-gradient(145deg,#343b2c,#20242a);flex-shrink:0;display:grid;place-items:center;overflow:hidden}.thumb svg{width:80px;height:72px}.exinfo{min-width:0;flex:1}.exnum{font-size:10px;color:var(--accent);font-weight:800;letter-spacing:1px}.exname{font-weight:800;font-size:14px;line-height:1.25;margin:4px 0}.exmeta{color:var(--muted);font-size:11px;line-height:1.4}.editbtn{background:var(--panel2);border:1px solid var(--line);color:var(--muted);border-radius:9px;padding:7px 9px;font-size:11px}
+.exercise{background:var(--panel);border:1px solid var(--line);border-radius:17px;margin:10px 0;overflow:hidden}.exhead{display:flex;gap:12px;padding:12px;align-items:center}.thumb{width:86px;height:78px;border-radius:12px;background:linear-gradient(145deg,#343b2c,#20242a);flex-shrink:0;display:grid;place-items:center;overflow:hidden}.thumb svg{width:80px;height:72px}.thumb img{width:100%;height:100%;object-fit:cover}.photo-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.photo-actions small{color:var(--muted);font-size:11px}.session-est{color:var(--accent);font-weight:800}.restbox{margin:0 12px 12px;padding:10px;background:#11150f;border:1px solid #3a4630;border-radius:12px;display:flex;align-items:center;justify-content:space-between;gap:8px}.restbox span{font-size:11px;color:var(--muted)}.restbox button{padding:8px 10px;font-size:11px}.restpanel{background:linear-gradient(135deg,#202a18,#171a1d);border:1px solid #3a4630;border-radius:16px;padding:13px;margin:10px 0 16px}.restpanel .timer{font-size:38px;margin:5px}.restpanel .timerrow{gap:6px}.restpanel .secondary{padding:9px 11px;font-size:12px}.exinfo{min-width:0;flex:1}.exnum{font-size:10px;color:var(--accent);font-weight:800;letter-spacing:1px}.exname{font-weight:800;font-size:14px;line-height:1.25;margin:4px 0}.exmeta{color:var(--muted);font-size:11px;line-height:1.4}.editbtn{background:var(--panel2);border:1px solid var(--line);color:var(--muted);border-radius:9px;padding:7px 9px;font-size:11px}
 .sets{padding:0 12px 12px}.setlabels,.setrow{display:grid;grid-template-columns:35px 1fr 1fr 40px;gap:7px;align-items:center}.setlabels{font-size:10px;color:var(--muted);padding:0 0 6px}.setrow{margin:5px 0}.setrow span{font-size:11px;color:var(--muted);text-align:center}.setrow input{min-width:0;width:100%;background:#101216;border:1px solid #343943;border-radius:9px;color:var(--txt);padding:9px 7px;font-size:13px;text-align:center}.done{appearance:none;width:25px;height:25px;border:1px solid #59616e;border-radius:8px;background:#111318;margin:auto;cursor:pointer}.done:checked{background:var(--accent);border-color:var(--accent)}.done:checked:after{content:"✓";display:block;color:#17200b;font-weight:900;font-size:17px;line-height:22px}
 .note{padding:0 12px 12px;color:var(--muted);font-size:11px}
 .primary{background:var(--accent);border:0;color:#18200c;font-weight:900;border-radius:12px;padding:13px 16px;width:100%;font-size:14px;cursor:pointer}.secondary{background:var(--panel2);border:1px solid var(--line);color:var(--txt);border-radius:11px;padding:11px 13px;font-weight:700;cursor:pointer}
@@ -26,6 +26,7 @@ main{max-width:760px;margin:auto;padding:0 14px}.hero{background:linear-gradient
 .panel{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:15px;margin:12px 0}.historyitem{border-bottom:1px solid var(--line);padding:10px 0}.historyitem:last-child{border:0}.muted{color:var(--muted)}.timer{font-size:46px;font-weight:900;text-align:center;margin:10px}.timerrow{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
 .modal{position:fixed;inset:0;background:#000b;display:none;align-items:flex-end;z-index:10}.modal.show{display:flex}.sheet{background:#1a1d22;border-radius:22px 22px 0 0;padding:20px;width:100%;max-width:600px;margin:auto;max-height:85vh;overflow:auto}.sheet h3{margin:0 0 14px}.field{display:block;margin:12px 0;color:var(--muted);font-size:12px}.field input{display:block;width:100%;margin-top:6px;background:#101216;border:1px solid var(--line);color:white;padding:12px;border-radius:10px;font-size:15px}
 .empty{text-align:center;padding:30px 12px;color:var(--muted)}
+select{background:#101216;border:1px solid #343943;color:var(--txt);padding:12px;border-radius:10px;width:100%;font-size:15px}.bottominner{gap:3px}.bottom button{font-size:10px;padding:7px 2px}.bottom{padding-left:6px;padding-right:6px}
 @media(min-width:600px){.daygrid{grid-template-columns:repeat(4,1fr)}.exhead{padding:15px}.thumb{width:105px;height:88px}}
 </style>
 </head>
@@ -36,76 +37,115 @@ main{max-width:760px;margin:auto;padding:0 14px}.hero{background:linear-gradient
 <div class="daygrid" id="days"></div>
 <div id="workout"></div>
 <div id="history" style="display:none"></div>
+<div id="settings" style="display:none"></div>
 <div id="tools" style="display:none">
- <div class="sectionhead"><h2>Chronomètre de repos</h2></div>
- <div class="panel"><div class="muted" style="text-align:center">Lance ton repos entre deux séries</div><div class="timer" id="clock">01:30</div><div class="timerrow"><button class="secondary" onclick="setTimer(60)">60 s</button><button class="secondary" onclick="setTimer(90)">90 s</button><button class="secondary" onclick="setTimer(120)">120 s</button></div><div class="timerrow" style="margin-top:12px"><button class="primary" style="width:auto;min-width:130px" onclick="toggleTimer()" id="timerBtn">Démarrer</button><button class="secondary" onclick="resetTimer()">Réinitialiser</button></div></div>
- <div class="sectionhead"><h2>Sauvegarde</h2></div><div class="panel"><p class="muted" style="font-size:13px;line-height:1.5">Tes charges, séries cochées et historiques sont enregistrés dans le stockage de ce navigateur sur ton téléphone.</p><button class="secondary" onclick="exportData()">Exporter mes données</button> <button class="secondary" onclick="document.getElementById('importFile').click()">Importer</button><input id="importFile" type="file" accept="application/json" hidden onchange="importData(event)"></div>
+ <div class="sectionhead"><h2>Outils & sauvegarde</h2></div><div class="panel"><p class="muted" style="font-size:13px;line-height:1.5">Tes charges, séries cochées et historiques sont enregistrés dans le stockage de ce navigateur sur ton téléphone.</p><button class="secondary" onclick="exportData()">Exporter mes données</button> <button class="secondary" onclick="document.getElementById('importFile').click()">Importer</button><input id="importFile" type="file" accept="application/json" hidden onchange="importData(event)"></div>
 </div>
 </main>
-<nav class="bottom"><div class="bottominner"><button class="active" id="navTrain" onclick="showTab('train')">🏋️ Séances</button><button id="navHistory" onclick="showTab('history')">📈 Historique</button><button id="navTools" onclick="showTab('tools')">⏱ Outils</button></div></nav>
-<div class="modal" id="editModal"><div class="sheet"><h3 id="editTitle">Modifier l’exercice</h3><label class="field">Charge de départ / actuelle<input id="editWeight" placeholder="Ex. 20 kg"></label><label class="field">Répétitions cibles<input id="editReps" placeholder="Ex. 8–12"></label><label class="field">Nombre de séries<input id="editSets" type="number" min="1" max="8"></label><div style="display:flex;gap:8px"><button class="primary" onclick="saveEdit()">Enregistrer</button><button class="secondary" onclick="closeEdit()">Fermer</button></div></div></div>
+<nav class="bottom"><div class="bottominner"><button class="active" id="navTrain" onclick="showTab('train')">🏋️ Séances</button><button id="navHistory" onclick="showTab('history')">📈 Historique</button><button id="navTools" onclick="showTab('tools')">⏱ Outils</button><button id="navSettings" onclick="showTab('settings')">⚙️ Paramètres</button></div></nav>
+<div class="modal" id="editModal"><div class="sheet"><h3 id="editTitle">Modifier l’exercice</h3><label class="field">Nom de l’exercice<input id="editName" placeholder="Nom de l’exercice"></label><label class="field">Séance associée<select id="editDay"></select></label><label class="field">Charge de départ / actuelle<input id="editWeight" placeholder="Ex. 20 kg"></label><label class="field">Répétitions cibles<input id="editReps" placeholder="Ex. 8–12"></label><label class="field">Nombre de séries<input id="editSets" type="number" min="1" max="8"></label><label class="field">Photo de démonstration<input id="editPhoto" type="file" accept="image/*"></label><div class="photo-actions"><small id="photoStatus">Photo intégrée ou importée depuis ton téléphone.</small><button type="button" class="secondary" onclick="removeExercisePhoto()">Retirer la photo personnalisée</button></div><div style="display:flex;gap:8px"><button class="primary" onclick="saveEdit()">Enregistrer</button><button class="secondary" onclick="closeEdit()">Fermer</button></div></div></div>
 <script>
 const program=[
-{day:"LUNDI",title:"Biceps + Abdos",items:[
-["Curl banc à l’envers 1 bras","3×8–10 / bras","14 kg / bras",3,"8–10","14 kg / bras"],
-["Curl incliné","3×8–12","À déterminer",3,"8–12",""],
-["Curl marteau","3×10–12","20 kg / bras",3,"10–12","20 kg / bras"],
-["Crunch poulie haute","3×12–15","À déterminer",3,"12–15",""],
-["Relevés de genoux suspendu / chaise romaine","3×10–15","Poids du corps",3,"10–15","Poids du corps"],
-["Gainage classique","3×30–45 s","Poids du corps",3,"30–45 s","Poids du corps"]
+{day:"LUNDI",title:"Pectoraux + Triceps",items:[
+["Développé couché plat","3×8–10","20 kg / haltère",3,"8–10","20 kg / haltère",10,"pec1"],
+["Développé incliné haltères","3×8–10","20 kg / haltère",3,"8–10","20 kg / haltère",11,"pec2"],
+["Écartés poulie vis-à-vis","3×12–15","18 kg / côté",3,"12–15","18 kg / côté",12,"pec3"],
+["Barre EZ au front","3×8–12","6 kg de chaque côté",3,"8–12","6 kg de chaque côté",18,"tri1"],
+["Extension triceps à la poulie","3×10–12","36 kg",3,"10–12","36 kg",19,"tri2"],
+["Dips à la machine","2×10–12","45 kg",2,"10–12","45 kg",20,"tri3"]
 ]},
-{day:"MERCREDI",title:"Dos + Épaules",items:[
-["Tirage vertical devant poulie haute","3×8–12","38,3 kg",3,"8–12","38,3 kg"],
-["Rowing assis poulie basse","3×8–12","À déterminer",3,"8–12",""],
-["Rowing haltère un bras","3×8–12","20 kg",3,"8–12","20 kg"],
-["Extensions lombaires","2×12–15","14 kg",2,"12–15","14 kg"],
-["Développé militaire machine","3×8–10","45–50 kg (ou haltères 24 kg)",3,"8–10","45–50 kg"],
-["Élévations latérales","3×12–15","14 kg poulie ou 10 kg haltère",3,"12–15","14 kg poulie"],
-["Bird double poulie","3×12–15","14 kg",3,"12–15","14 kg"],
-["Shrugs","2×10–12","26 kg / bras",2,"10–12","26 kg / bras"]
+{day:"MERCREDI",title:"Dos + Biceps",items:[
+["Tirage vertical devant poulie haute","3×8–12","38,3 kg",3,"8–12","38,3 kg",7,"dos1"],
+["Rowing assis poulie basse","3×8–12","À déterminer",3,"8–12","",8,"dos2"],
+["Rowing haltère un bras","3×8–12","20 kg",3,"8–12","20 kg",9,"dos3"],
+["Extensions lombaires","2×12–15","14 kg",2,"12–15","14 kg",22,"dos4"],
+["Curl banc à l’envers 1 bras","3×8–10 / bras","14 kg / bras",3,"8–10","14 kg / bras",1,"bic1"],
+["Curl incliné","3×8–12","À déterminer",3,"8–12","",2,"bic2"],
+["Curl marteau","3×10–12","20 kg / bras",3,"10–12","20 kg / bras",3,"bic3"]
 ]},
-{day:"JEUDI",title:"Pectoraux + Triceps",items:[
-["Développé couché plat","3×8–10","20 kg / haltère ou 50 kg machine",3,"8–10","20 kg / haltère"],
-["Développé incliné haltères","3×8–10","20 kg / haltère ou 40–50 kg machine",3,"8–10","20 kg / haltère"],
-["Écartés poulie vis-à-vis","3×12–15","18–23 kg / côté",3,"12–15","18 kg / côté"],
-["Barre EZ au front","3×8–12","6 kg de chaque côté",3,"8–12","6 kg de chaque côté"],
-["Extension triceps à la poulie","3×10–12","36 kg",3,"10–12","36 kg"],
-["Dips à la machine","2×10–12","45 kg",2,"10–12","45 kg"]
+{day:"JEUDI",title:"Jambes + Fessiers",items:[
+["Presse à cuisses","3×8–12","120 kg",3,"8–12","120 kg",17,"leg1"],
+["Presse inversée","3×10–12","30 kg max",3,"10–12","30 kg max",18,"leg2"],
+["Leg curl","3×10–12","52 kg assis",3,"10–12","52 kg assis",20,"leg3"],
+["Leg extension","3×10–12","59 kg",3,"10–12","59 kg",19,"leg4"],
+["Mollets machine","3×15–20","100 kg",3,"15–20","100 kg",22,"leg5"],
+["Fessiers machine","2×12–15","10 kg",2,"12–15","10 kg",23,"leg6"],
+["Adducteurs machine","2×12–15","45 kg",2,"12–15","45 kg",24,"leg7"],
+["Abducteurs machine","2×12–15","39 kg",2,"12–15","39 kg",25,"leg8"]
 ]},
-{day:"VENDREDI",title:"Jambes + Fessiers",items:[
-["Presse à cuisses","3×8–12","120 kg",3,"8–12","120 kg"],
-["Presse inversée","3×10–12","30 kg max",3,"10–12","30 kg max"],
-["Leg curl","3×10–12","52 kg assis ou 30 kg couché",3,"10–12","52 kg assis"],
-["Leg extension","3×10–12","59 kg",3,"10–12","59 kg"],
-["Mollets machine","3×15–20","100 kg",3,"15–20","100 kg"],
-["Fessiers machine","2×12–15","10 kg",2,"12–15","10 kg"],
-["Adducteurs machine","2×12–15","45 kg",2,"12–15","45 kg"],
-["Abducteurs machine","2×12–15","39 kg",2,"12–15","39 kg"]
+{day:"VENDREDI",title:"Épaules + Abdos",items:[
+["Développé militaire machine","3×8–10","45–50 kg",3,"8–10","45–50 kg",13,"epa1"],
+["Élévations latérales","3×12–15","14 kg poulie",3,"12–15","14 kg poulie",14,"epa2"],
+["Bird double poulie","3×12–15","14 kg",3,"12–15","14 kg",15,"epa3"],
+["Shrugs","2×10–12","26 kg / bras",2,"10–12","26 kg / bras",16,"epa4"],
+["Crunch poulie haute","3×12–15","À déterminer",3,"12–15","",4,"abs1"],
+["Relevés de genoux suspendu / chaise romaine","3×10–15","Poids du corps",3,"10–15","Poids du corps",5,"abs2"],
+["Gainage classique","3×30–45 s","Poids du corps",3,"30–45 s","Poids du corps",6,"abs3"]
 ]}];
+const sessionMinutes=[65,75,70,60];
 let state=JSON.parse(localStorage.getItem("muscu2")||'{"weights":{},"reps":{},"checks":{},"history":[]}');
 let active=0,editTarget=null,timerLeft=90,timerId=null;
-const save=()=>localStorage.setItem("muscu2",JSON.stringify(state));
-function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function drawDays(){document.getElementById('days').innerHTML=program.map((p,i)=>`<button class="day ${i===active?'active':''}" onclick="selectDay(${i})"><div class="d">${p.day}</div><div class="name">${p.title}</div><div class="count">${p.items.length} exercices</div></button>`).join('')}
-function art(i){let poses=['<circle cx="40" cy="17" r="7"/><path d="M40 25v24m0-15-17 7m17-7 18 5M40 49l-10 17m10-17 12 17"/>','<circle cx="40" cy="17" r="7"/><path d="M40 25v25m0-17-16 8m16-8 16 8M40 50l-10 16m10-16 12 16"/>','<circle cx="40" cy="17" r="7"/><path d="M40 25v24m0-15-18-5m18 5 18-5M40 49 28 66m12-17 12 17"/>'];return `<svg viewBox="0 0 80 76" fill="none" stroke="#d4f18a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 68h64" stroke="#66734f" stroke-width="2"/>${poses[i%3]}<path d="M16 34h9m30 0h9M16 30v8m42-8v8" stroke="#a5b1bd" stroke-width="3"/></svg>`}
-function drawWorkout(){let p=program[active];document.getElementById('workout').style.display='block';document.getElementById('workout').innerHTML=`<div class="sectionhead"><h2>${p.title}</h2><small>${p.items.length} exercices</small></div>${p.items.map((e,i)=>{let id=active+'-'+i,n=Number(state.sets?.[id]||e[3]),w=state.weights[id]??e[5],r=state.reps[id]??e[4];return `<article class="exercise"><div class="exhead"><div class="thumb">${art(i)}</div><div class="exinfo"><div class="exnum">EXERCICE ${String(i+1).padStart(2,'0')}</div><div class="exname">${esc(e[0])}</div><div class="exmeta">${n} séries · ${esc(r)} reps · ${esc(w||e[2])}</div></div><button class="editbtn" onclick="editExercise(${active},${i})">Modifier</button></div><div class="sets"><div class="setlabels"><span>SÉRIE</span><span>CHARGE</span><span>REPS</span><span>OK</span></div>${Array.from({length:n},(_,s)=>`<div class="setrow"><span>${s+1}</span><input aria-label="Charge série ${s+1}" value="${esc(w||'')}" placeholder="kg" onchange="setValue('${id}','weight',this.value)"><input aria-label="Répétitions série ${s+1}" value="${esc(r)}" placeholder="reps" onchange="setValue('${id}','reps',this.value)"><input class="done" type="checkbox" ${state.checks[id+'-'+s]?'checked':''} onchange="checkSet('${id}',${s},this.checked)"></div>`).join('')}</div></article>`}).join('')}<button class="primary" onclick="finishWorkout()">Terminer et enregistrer la séance</button><p class="note">Les charges et répétitions sont modifiables exercice par exercice. Les validations sont enregistrées automatiquement.</p>`;updateStats()}
+state.weights=state.weights||{};state.reps=state.reps||{};state.checks=state.checks||{};state.photos=state.photos||{};state.sets=state.sets||{};
+// Les préférences de programme sont sauvegardées séparément des performances.
+if(Array.isArray(state.program)&&state.program.length){
+  const restored=state.program;
+  // On restaure les réglages de séance et les exercices personnalisés, sans écraser le programme livré si le format est ancien.
+  if(restored.every(d=>d&&Array.isArray(d.items))) { program.splice(0,program.length,...restored); }
+}
+// Migration des anciennes charges saisies avec les anciens numéros d’exercices.
+if(!Array.isArray(state.program)){
+ const oldToNew={"0-0":"bic1","0-1":"bic2","0-2":"bic3","0-3":"abs1","0-4":"abs2","0-5":"abs3","1-0":"dos1","1-1":"dos2","1-2":"dos3","1-3":"dos4","1-4":"epa1","1-5":"epa2","1-6":"epa3","1-7":"epa4","2-0":"pec1","2-1":"pec2","2-2":"pec3","2-3":"tri1","2-4":"tri2","2-5":"tri3","3-0":"leg1","3-1":"leg2","3-2":"leg3","3-3":"leg4","3-4":"leg5","3-5":"leg6","3-6":"leg7","3-7":"leg8"};
+ for(const field of ['weights','reps','sets']) for(const [oldId,newId] of Object.entries(oldToNew)) if(state[field][oldId]!==undefined&&state[field][newId]===undefined) state[field][newId]=state[field][oldId];
+ for(const [oldId,newId] of Object.entries(oldToNew)) for(const [key,value] of Object.entries(state.checks)) if(key.startsWith(oldId+'-')) state.checks[newId+key.slice(oldId.length)]=value;
+}
+const save=()=>{state.program=program;localStorage.setItem("muscu2",JSON.stringify(state))};
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function exid(e,d,i){return e[7]||('legacy-'+d+'-'+i)}
+function getPhoto(e,d,i){return state.photos[exid(e,d,i)]||`photos/ex${e[6]||1}.jpg`}
+function drawDays(){document.getElementById('days').innerHTML=program.map((p,i)=>`<button class="day ${i===active?'active':''}" onclick="selectDay(${i})"><div class="d">${esc(p.day)}</div><div class="name">${esc(p.title)}</div><div class="count">${p.items.length} exercices · <span class="session-est">${Number(p.minutes||sessionMinutes[i]||60)} min env.</span></div></button>`).join('');document.querySelector('.stats .stat:first-child b').textContent=program.length}
+function drawWorkout(){if(!program.length){document.getElementById('workout').innerHTML='<div class="panel empty">Ajoute une séance dans Paramètres pour commencer.</div>';return}active=Math.min(active,program.length-1);let p=program[active];document.getElementById('workout').style.display='block';document.getElementById('workout').innerHTML=`<div class="sectionhead"><h2>${esc(p.title)}</h2><small>${p.items.length} exercices · <span class="session-est">≈ ${Number(p.minutes||sessionMinutes[active]||60)} min</span></small></div><div class="restpanel"><div class="muted" style="text-align:center;font-size:12px">⏱ Chronomètre de repos</div><div class="timer" id="clock">01:30</div><div class="timerrow"><button class="secondary" onclick="setTimer(30)">30 s</button><button class="secondary" onclick="setTimer(60)">1 min</button><button class="secondary" onclick="setTimer(90)">1 min 30</button><button class="secondary" onclick="setTimer(120)">2 min</button></div><div class="timerrow" style="margin-top:9px"><button class="primary" style="width:auto;min-width:115px" onclick="toggleTimer()" id="timerBtn">Démarrer</button><button class="secondary" onclick="resetTimer()">Réinitialiser</button></div></div>${p.items.map((e,i)=>{let id=exid(e,active,i),n=Number(state.sets[id]||e[3]),w=state.weights[id]??e[5],r=state.reps[id]??e[4];return `<article class="exercise"><div class="exhead"><div class="thumb"><img src="${getPhoto(e,active,i)}" alt="Photo de ${esc(e[0])}" loading="lazy" onerror="this.style.display='none'"></div><div class="exinfo"><div class="exnum">EXERCICE ${String(i+1).padStart(2,'0')}</div><div class="exname">${esc(e[0])}</div><div class="exmeta">${n} séries · ${esc(r)} reps · ${esc(w||e[2])}</div></div><button class="editbtn" onclick="editExercise(${active},${i})">Modifier</button></div><div class="sets"><div class="setlabels"><span>SÉRIE</span><span>CHARGE</span><span>REPS</span><span>OK</span></div>${Array.from({length:n},(_,ss)=>`<div class="setrow"><span>${ss+1}</span><input aria-label="Charge série ${ss+1}" value="${esc(w||'')}" placeholder="kg" onchange="setValue('${id}','weight',this.value)"><input aria-label="Répétitions série ${ss+1}" value="${esc(r)}" placeholder="reps" onchange="setValue('${id}','reps',this.value)"><input class="done" type="checkbox" ${state.checks[id+'-'+ss]?'checked':''} onchange="checkSet('${id}',${ss},this.checked)"></div>`).join('')}</div><div class="restbox"><span>Pause après cet exercice</span><button class="secondary" onclick="startRest(90)">Lancer 1 min 30</button></div></article>`}).join('')}<button class="primary" onclick="finishWorkout()">Terminer et enregistrer la séance</button><p class="note">Tes charges, répétitions et validations sont conservées automatiquement. Durée indicative : ${Number(p.minutes||sessionMinutes[active]||60)} minutes.</p>`;updateStats()}
 function selectDay(i){active=i;drawDays();drawWorkout()}
 function setValue(id,type,val){state[type==='weight'?'weights':'reps'][id]=val;save()}
-function checkSet(id,s,v){state.checks[id+'-'+s]=v;save();updateStats()}
-function updateStats(){let count=Object.values(state.checks).filter(Boolean).length;document.getElementById('doneCount').textContent=count;document.getElementById('sessionCount').textContent=state.history.length}
-function editExercise(d,i){editTarget=[d,i];let e=program[d].items[i],id=d+'-'+i;document.getElementById('editTitle').textContent=e[0];document.getElementById('editWeight').value=state.weights[id]??e[5];document.getElementById('editReps').value=state.reps[id]??e[4];document.getElementById('editSets').value=state.sets?.[id]??e[3];document.getElementById('editModal').classList.add('show')}
+function checkSet(id,ss,v){state.checks[id+'-'+ss]=v;save();updateStats()}
+function updateStats(){document.getElementById('doneCount').textContent=Object.values(state.checks).filter(Boolean).length;document.getElementById('sessionCount').textContent=(state.history||[]).length}
+function editExercise(d,i){editTarget=[d,i];let e=program[d].items[i],id=exid(e,d,i);document.getElementById('editTitle').textContent='Modifier l’exercice';document.getElementById('editName').value=e[0];document.getElementById('editDay').innerHTML=program.map((p,j)=>`<option value="${j}" ${j===d?'selected':''}>${esc(p.day)} — ${esc(p.title)}</option>`).join('');document.getElementById('editWeight').value=state.weights[id]??e[5];document.getElementById('editReps').value=state.reps[id]??e[4];document.getElementById('editSets').value=state.sets[id]??e[3];document.getElementById('editPhoto').value='';document.getElementById('photoStatus').textContent=state.photos[id]?'Photo personnalisée importée.':'Photo intégrée ; tu peux la remplacer depuis ton téléphone.';document.getElementById('editModal').classList.add('show')}
 function closeEdit(){document.getElementById('editModal').classList.remove('show')}
-function saveEdit(){if(!editTarget)return;let [d,i]=editTarget,id=d+'-'+i;state.weights[id]=document.getElementById('editWeight').value;state.reps[id]=document.getElementById('editReps').value;state.sets=state.sets||{};state.sets[id]=Math.max(1,Math.min(8,Number(document.getElementById('editSets').value)||3));save();closeEdit();drawWorkout()}
-function finishWorkout(){let p=program[active],valid=Object.keys(state.checks).filter(k=>k.startsWith(active+'-')&&state.checks[k]).length;state.history.unshift({date:new Date().toLocaleString('fr-FR'),day:p.day,title:p.title,valid});save();Object.keys(state.checks).filter(k=>k.startsWith(active+'-')).forEach(k=>delete state.checks[k]);save();updateStats();alert('Séance enregistrée ! '+valid+' série(s) validée(s).')}
-function showTab(tab){['train','history','tools'].forEach(t=>document.getElementById('nav'+t[0].toUpperCase()+t.slice(1)).classList.toggle('active',t===tab));document.getElementById('days').style.display=tab==='train'?'grid':'none';document.getElementById('workout').style.display=tab==='train'?'block':'none';document.getElementById('history').style.display=tab==='history'?'block':'none';document.getElementById('tools').style.display=tab==='tools'?'block':'none';if(tab==='history')drawHistory()}
-function drawHistory(){let h=document.getElementById('history');h.innerHTML='<div class="sectionhead"><h2>Historique</h2><small>'+state.history.length+' séances</small></div>'+(state.history.length?state.history.map(x=>`<div class="panel historyitem"><b>${esc(x.title)}</b><div class="muted" style="font-size:12px;margin-top:5px">${esc(x.date)} · ${x.valid} séries validées</div></div>`).join(''):'<div class="panel empty">Tes séances terminées apparaîtront ici.</div>')}
-function setTimer(s){timerLeft=s;renderClock();if(timerId){clearInterval(timerId);timerId=null;document.getElementById('timerBtn').textContent='Démarrer'}}
-function renderClock(){document.getElementById('clock').textContent=String(Math.floor(timerLeft/60)).padStart(2,'0')+':'+String(timerLeft%60).padStart(2,'0')}
-function toggleTimer(){if(timerId){clearInterval(timerId);timerId=null;document.getElementById('timerBtn').textContent='Reprendre';return}document.getElementById('timerBtn').textContent='Pause';timerId=setInterval(()=>{timerLeft--;renderClock();if(timerLeft<=0){clearInterval(timerId);timerId=null;document.getElementById('timerBtn').textContent='Terminé';if(navigator.vibrate)navigator.vibrate([250,100,250])}},1000)}
-function resetTimer(){if(timerId)clearInterval(timerId);timerId=null;timerLeft=90;renderClock();document.getElementById('timerBtn').textContent='Démarrer'}
-function exportData(){let b=new Blob([JSON.stringify(state,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='muscu-salle-2-donnees.json';a.click();URL.revokeObjectURL(a.href)}
-function importData(e){let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{state=JSON.parse(r.result);save();drawWorkout();updateStats();alert('Données importées.')}catch{alert('Fichier invalide.')}};r.readAsText(f)}
+function removeExercisePhoto(){if(!editTarget)return;let e=program[editTarget[0]].items[editTarget[1]],id=exid(e,...editTarget);delete state.photos[id];save();document.getElementById('photoStatus').textContent='Photo intégrée rétablie.';drawWorkout();drawSettings()}
+function saveEdit(){if(!editTarget)return;let [d,i]=editTarget,e=program[d].items[i],id=exid(e,d,i),newDay=Number(document.getElementById('editDay').value);e[0]=document.getElementById('editName').value.trim()||e[0];e[5]=document.getElementById('editWeight').value;e[2]=e[5]||'À déterminer';e[4]=document.getElementById('editReps').value;e[3]=Math.max(1,Math.min(12,Number(document.getElementById('editSets').value)||3));e[1]=e[3]+'×'+e[4];state.weights[id]=e[5];state.reps[id]=e[4];state.sets[id]=e[3];if(newDay!==d){program[d].items.splice(i,1);program[newDay].items.push(e);active=newDay;}save();closeEdit();drawDays();drawWorkout();drawSettings()}
+function moveExercise(d,i,delta){let arr=program[d].items,j=i+delta;if(j<0||j>=arr.length)return;[arr[i],arr[j]]=[arr[j],arr[i]];save();drawSettings()}
+function deleteExercise(d,i){if(!confirm('Supprimer cet exercice ?'))return;program[d].items.splice(i,1);save();drawSettings();drawDays();drawWorkout()}
+function addExercise(d){let name=prompt('Nom du nouvel exercice :');if(!name||!name.trim())return;let reps=prompt('Répétitions cibles (ex. 3×8–12) :','3×8–12')||'3×8–12';let weight=prompt('Charge de départ (facultatif) :','')||'';let sets=Number((reps.match(/^(\d+)/)||[])[1])||3;let uid='custom-'+Date.now();program[d].items.push([name.trim(),reps,weight,sets,reps.replace(/^\d+×/,''),weight,1,uid]);save();drawSettings();drawDays();drawWorkout()}
+function addSession(){let title=prompt('Nom de la nouvelle séance :','Nouvelle séance');if(!title||!title.trim())return;let day=prompt('Jour :','SAMEDI')||'SAMEDI';program.push({day:day.toUpperCase(),title:title.trim(),minutes:60,items:[]});active=program.length-1;save();drawSettings();drawDays();drawWorkout()}
+function renameSession(d){let title=prompt('Nom de la séance :',program[d].title);if(title&&title.trim())program[d].title=title.trim();let day=prompt('Jour :',program[d].day);if(day&&day.trim())program[d].day=day.trim().toUpperCase();let mins=prompt('Durée indicative en minutes :',String(program[d].minutes||sessionMinutes[d]||60));if(mins&&Number(mins)>0)program[d].minutes=Number(mins);save();drawSettings();drawDays();drawWorkout()}
+function moveSession(d,delta){let j=d+delta;if(j<0||j>=program.length)return;[program[d],program[j]]=[program[j],program[d]];if(active===d)active=j;else if(active===j)active=d;save();drawSettings();drawDays();drawWorkout()}
+function deleteSession(d){if(!confirm('Supprimer cette séance et ses exercices du programme ?'))return;program.splice(d,1);active=Math.max(0,Math.min(active,program.length-1));save();drawSettings();drawDays();drawWorkout()}
+function drawSettings(){let root=document.getElementById('settings');root.innerHTML=`<div class="sectionhead"><h2>Personnaliser ton programme</h2><small>${program.length} séances · ${program.reduce((a,p)=>a+p.items.length,0)} exercices</small></div><div class="panel"><p class="muted" style="font-size:13px;line-height:1.5;margin-top:0">Gère librement tes jours, tes séances et tous tes exercices. Tu peux ajouter, supprimer, déplacer, renommer ou modifier les photos. Les changements sont sauvegardés sur cet appareil.</p><button class="primary" onclick="addSession()">＋ Ajouter une séance</button></div>${program.map((p,d)=>`<section class="panel"><div class="sectionhead" style="margin-top:0"><div><div class="exnum">${esc(p.day)}</div><h2>${esc(p.title)}</h2><small>${p.items.length} exercices · ${Number(p.minutes||sessionMinutes[d]||60)} min env.</small></div><div><button class="editbtn" onclick="moveSession(${d},-1)">↑</button><button class="editbtn" onclick="moveSession(${d},1)">↓</button><button class="editbtn" onclick="renameSession(${d})">Renommer</button><button class="editbtn" onclick="deleteSession(${d})">✕</button></div></div>${p.items.map((e,i)=>`<div style="display:flex;align-items:center;gap:7px;border-top:1px solid var(--line);padding:10px 0"><div style="flex:1;min-width:0"><b style="font-size:13px">${esc(e[0])}</b><div class="muted" style="font-size:11px">${esc(e[1])} · ${esc(e[2])}</div></div><button class="editbtn" onclick="moveExercise(${d},${i},-1)">↑</button><button class="editbtn" onclick="moveExercise(${d},${i},1)">↓</button><button class="editbtn" onclick="editExercise(${d},${i})">Modifier</button><button class="editbtn" onclick="deleteExercise(${d},${i})">✕</button></div>`).join('')}<button class="secondary" style="width:100%;margin-top:8px" onclick="addExercise(${d})">＋ Ajouter un exercice</button></section>`).join('')}`}
+function finishWorkout(){let p=program[active],ids=p.items.map((e,i)=>exid(e,active,i)),valid=Object.entries(state.checks).filter(([k,v])=>v&&ids.some(id=>k.startsWith(id+'-'))).length;state.history.unshift({date:new Date().toLocaleString('fr-FR'),day:p.day,title:p.title,valid,estimate:Number(p.minutes||sessionMinutes[active]||60)});ids.forEach(id=>Object.keys(state.checks).filter(k=>k.startsWith(id+'-')).forEach(k=>delete state.checks[k]));save();updateStats();alert('Séance enregistrée ! '+valid+' série(s) validée(s).')}
+function showTab(tab){['train','history','tools','settings'].forEach(t=>{let el=document.getElementById('nav'+t[0].toUpperCase()+t.slice(1));if(el)el.classList.toggle('active',t===tab)});document.getElementById('days').style.display=tab==='train'?'grid':'none';document.getElementById('workout').style.display=tab==='train'?'block':'none';document.getElementById('history').style.display=tab==='history'?'block':'none';document.getElementById('tools').style.display=tab==='tools'?'block':'none';document.getElementById('settings').style.display=tab==='settings'?'block':'none';if(tab==='history')drawHistory();if(tab==='settings')drawSettings()}
+function drawHistory(){let h=document.getElementById('history');h.innerHTML='<div class="sectionhead"><h2>Historique</h2><small>'+state.history.length+' séances</small></div>'+(state.history.length?state.history.map(x=>`<div class="panel historyitem"><b>${esc(x.title)}</b><div class="muted" style="font-size:12px;margin-top:5px">${esc(x.date)} · ${x.valid} séries validées · durée indicative : ${x.estimate||'—'} min</div></div>`).join(''):'<div class="panel empty">Tes séances terminées apparaîtront ici.</div>')}
+function startRest(s){setTimer(s);toggleTimer()}
+function setTimer(s){if(timerId){clearInterval(timerId);timerId=null;}timerLeft=s;renderClock();document.querySelectorAll('#timerBtn').forEach(b=>b.textContent='Démarrer')}
+function renderClock(){document.querySelectorAll('#clock').forEach(el=>el.textContent=String(Math.floor(timerLeft/60)).padStart(2,'0')+':'+String(timerLeft%60).padStart(2,'0'))}
+function toggleTimer(){if(timerId){clearInterval(timerId);timerId=null;document.querySelectorAll('#timerBtn').forEach(b=>b.textContent='Reprendre');return}document.querySelectorAll('#timerBtn').forEach(b=>b.textContent='Pause');timerId=setInterval(()=>{timerLeft--;renderClock();if(timerLeft<=0){clearInterval(timerId);timerId=null;document.querySelectorAll('#timerBtn').forEach(b=>b.textContent='Terminé');if(navigator.vibrate)navigator.vibrate([250,100,250])}},1000)}
+function resetTimer(){if(timerId)clearInterval(timerId);timerId=null;timerLeft=90;renderClock();document.querySelectorAll('#timerBtn').forEach(b=>b.textContent='Démarrer')}
+function exportData(){let b=new Blob([JSON.stringify(state,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='ma-muscu-en-salle-donnees.json';a.click();URL.revokeObjectURL(a.href)}
+function importData(e){let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{let imported=JSON.parse(r.result);state={...state,...imported};if(Array.isArray(imported.program))program.splice(0,program.length,...imported.program);save();drawDays();drawWorkout();updateStats();alert('Données importées.')}catch{alert('Fichier invalide.')}};r.readAsText(f)}
 drawDays();drawWorkout();renderClock();updateStats();
+document.getElementById('editPhoto').addEventListener('change',ev=>{
+ const file=ev.target.files?.[0]; if(!file||!editTarget)return;
+ if(!file.type.startsWith('image/')){alert('Choisis un fichier image.');return;}
+ const reader=new FileReader();
+ reader.onload=()=>{
+  const img=new Image();
+  img.onload=()=>{
+   const canvas=document.createElement('canvas'),max=720,scale=Math.min(1,max/Math.max(img.width,img.height));
+   canvas.width=Math.round(img.width*scale);canvas.height=Math.round(img.height*scale);
+   canvas.getContext('2d').drawImage(img,0,0,canvas.width,canvas.height);
+   const e=program[editTarget[0]].items[editTarget[1]],id=exid(e,...editTarget);state.photos[id]=canvas.toDataURL('image/jpeg',0.78);save();
+   document.getElementById('photoStatus').textContent='Photo importée et enregistrée sur cet appareil.';drawWorkout();drawSettings();
+  };img.src=reader.result;
+ };reader.readAsDataURL(file);
+});
 </script>
 <script>
 if ("serviceWorker" in navigator) {
